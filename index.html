@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Brotherhood Survey</title>
+  </head>
+  <body>
+    <h1 id="title">Brotherhood Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help me improve our friendship</p>
+    <form id="survey-form">
+      <fieldset id="personal-information">
+        <label id="name-label" for="name">Name
+        <input id="name" type="text" name="name"
+          placeholder="Enter your name" required/></label>
+        <label id="email-label" for="email">Email
+        <input id="email" type="email" name="email" 
+          placeholder="Enter your Email" required></label>
+        <label id="number-label" for="number">
+          How long have we been playing together? 
+        <input id="number" type="number" name="year" 
+          min="0" max="100" placeholder="--" required></label>
+      </fieldset>
+      <fieldset id="overall-information">
+        <label id="dropdown"> What is our friendship level?
+        <select id="dropdown">
+          <option value="" disabled selected>Select current level</option>
+          <option value="1">Level 1: Strangers</option>
+          <option value="2">Level 2: Acquaintances</option>
+          <option value="3">Level 3: Casual Friends</option>
+          <option value="4">Level 4: Close Friends</option>
+          <option value="5">Level 5: Intimate Friends</option>
+        </select></label>
+
+
+        <label class="question">Do you want to spend more time with me?</label>
+        <label><input class="inline" type="radio" id="definitely" name="radio" value="definitely"/>Definitely</label>
+        <label><input class="inline" type="radio" id="maybe" name="radio" value="maybe"/>Maybe</label>
+        <label><input class="inline" type="radio" id="not-sure" name="radio" value="not-sure"/>Not Sure</label>
+        
+        <label class="question">What do you like most about me?
+        <select id="dropdown">
+          <option value="" disabled selected> Select one from the list below
+          <option value="chill">Easygoing (chill, relaxed)</option>
+          <option value="helpful">Helpful (useful, eager to help)</option>
+          <option value="funny">Amusing (funny and pleasurable)</option>
+          <option value="chatty">Chatty (talkative in a friendly way)</option>
+          <option value="caring">Caring (kind, sympathetic, helpful)</option>
+          <option value="Cheerful">Cheerful (behaving in a friendly happy way)</option>
+          <option value="inspiring">Inspiring (making you feel you want to do something)</option>
+          <option value="loyal">Trustworthy (a person you can rely on to be sincere and honest)</option>
+          <option value="good-listener">Good listener (a person who is there for you when you need it and listens to your problems)</option>
+          <option value="nothing">Nothing</option>
+        </select></label>
+
+        <label class="question">What do you like to do with me? (Check all that apply)
+        <label><input class="inline" type="checkbox" id="biking" name="check" value="biking"/>Biking</label>
+        <label><input class="inline" type="checkbox" id="gaming" name="check" value="gaming"/>Gaming</label>
+        <label><input class="inline" type="checkbox" id="cooking" name="check" value="cooking"/>Cooking</label>
+        <label><input class="inline" type="checkbox" id="studying" name="check" value="studying"/>Studying</label>
+        <label><input class="inline" type="checkbox" id="shopping" name="check" value="shopping"/>Shopping</label>    
+        <label><input class="inline" type="checkbox" id="movie" name="check" value="movie"/>Watching Movie</label>
+        <label><input class="inline" type="checkbox" id="concert" name="check" value="concert"/>Going to a concert</label>
+        <label><input class="inline" type="checkbox" id="boardgame" name="check" value="boardgame"/>Playing Boardgame</label>
+        <label><input class="inline" type="checkbox" id="eating-out" name="check" value="eating-out"/>Try a new restaurant</label>
+        <label><input class="inline" type="checkbox" id="traveling" name="check" value="traveling"/>Traveling (hiking, exploring)</label>
+        <label><input class="inline" type="checkbox" id="something-else" name="check" value="something-else"/>More:</label>
+        <textarea rows="5" cols="50" placeholder="Enter your ideas here..."></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Is there anything else you want to tell me?
+        <textarea rows="7" cols="50" placeholder="Write it here..."></textarea></label>
+      </fieldset>
+      <input id="submit" type="submit">
+    </form> 
+  </body>
+</html>
